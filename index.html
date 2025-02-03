@@ -1,189 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Torvex Electricals</title>
-  <!-- Tailwind CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/styles.css">
-  <!-- Material Icons -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
-<body class="bg-gray-100 font-sans">
-  <!-- Header -->
-  <header class="bg-blue-900 text-white py-4 fixed w-full top-0 z-50">
-    <div class="container mx-auto flex justify-between items-center px-4">
-      <!-- Logo -->
-      <div class="logo">
-        <img src="images/logo.jpg" alt="Torvex Electricals Logo" class="h-12">
-      </div>
-  
-      <!-- Navigation Menu -->
-      <nav class="flex items-center space-x-6">
-        <!-- Home -->
-        <a href="#home" class="hover:text-yellow-400">
-          <span class="hidden md:inline">Home</span>
-          <span class="material-icons md:hidden">home</span>
-        </a>
-        <!-- Services -->
-        <a href="#services" class="hover:text-yellow-400">
-          <span class="hidden md:inline">Services</span>
-          <span class="material-icons md:hidden">build</span>
-        </a>
-        <!-- About Us -->
-        <a href="#about" class="hover:text-yellow-400">
-          <span class="hidden md:inline">About Us</span>
-          <span class="material-icons md:hidden">info</span>
-        </a>
-        <!-- Contact -->
-        <a href="#contact" class="hover:text-yellow-400">
-          <span class="hidden md:inline">Contact</span>
-          <span class="material-icons md:hidden">email</span>
-        </a>
-      </nav>
-  
-      <!-- Contact Info -->
-      <div class="flex items-center space-x-4">
-        <!-- <a href="tel:0541813988" class="hover:text-yellow-400">0541813988</a> -->
-        <a href="https://wa.me/233541813988" target="_blank">
-          <span class="material-icons text-green-500 hover:text-green-400">whatsapp</span>
-        </a>
-      </div>
-    </div>
-  </header>
-  <!-- Hero Section -->
-  <section id="home" class="bg-blue-800 text-white py-20 fade-in">
-    <div class="container mx-auto text-center">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4">Professional Electrical Services</h1>
-      <p class="text-lg mb-8">Reliable, Efficient, and Affordable Solutions for Your Electrical Needs</p>
-      <div class="space-x-4">
-        <a href="#contact" class="bg-yellow-400 text-blue-900 px-6 py-3 rounded-lg hover:bg-yellow-500">Get a Free Quote</a>
-        <a href="tel:0541813988" class="bg-transparent border border-yellow-400 text-yellow-400 px-6 py-3 rounded-lg hover:bg-yellow-400 hover:text-blue-900">Call Now</a>
-      </div>
-    </div>
-  </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEEL Electrical Solutions</title>
+    <!-- Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
 
-  <!-- Services Section -->
-  <section id="services" class="py-16 fade-in">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Service Cards -->
-        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-          <span class="material-icons text-blue-900 text-4xl mb-4">home</span>
-          <h3 class="text-xl font-bold mb-2">Residential Electrical Services</h3>
-          <p class="text-gray-700">Wiring, lighting, panel upgrades, and more.</p>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <!-- Sticky Header -->
+    <header
+      class="fixed w-full top-0 z-50 bg-blue-900 bg-opacity-90 backdrop-blur-sm py-4"
+    >
+      <div class="container mx-auto flex justify-between items-center px-4">
+        <!-- Logo -->
+        <div class="logo">
+          <img
+            src="images/logo.jpg"
+            alt="MEEL Electrical Solutions Logo"
+            class="h-12"
+          />
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-          <span class="material-icons text-blue-900 text-4xl mb-4">business</span>
-          <h3 class="text-xl font-bold mb-2">Commercial Electrical Services</h3>
-          <p class="text-gray-700">Office wiring, maintenance, and installations.</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-          <span class="material-icons text-blue-900 text-4xl mb-4">build</span>
-          <h3 class="text-xl font-bold mb-2">Emergency Repairs</h3>
-          <p class="text-gray-700">24/7 emergency electrical services.</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- About Section -->
-  <section id="about" class="bg-blue-50 py-16 fade-in">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-12">About Torvex Electricals</h2>
-      <div class="flex flex-col md:flex-row items-center">
-        <div class="md:w-1/2 mb-8 md:mb-0">
-          <img src="images/electrician.jpg" alt="Electrician" class="rounded-lg shadow-lg">
-        </div>
-        <div class="md:w-1/2 md:pl-8">
-          <p class="text-gray-700 mb-4">
-            Torvex Electricals is a trusted provider of professional electrical services.
-            We are committed to delivering reliable, efficient, and affordable solutions
-            for all your electrical needs.
+        <!-- Navigation Menu -->
+        <nav class="flex items-center space-x-6">
+          <a href="#home" class="hover:text-yellow-400">Home</a>
+          <a href="#services" class="hover:text-yellow-400">Services</a>
+          <a href="#gallery" class="hover:text-yellow-400">Gallery</a>
+          <a href="#about" class="hover:text-yellow-400">About Us</a>
+          <a href="#why-us" class="hover:text-yellow-400">Why Us</a>
+          <a href="#contact" class="hover:text-yellow-400">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-20">
+      <!-- Add padding-top to account for the sticky header -->
+      <!-- Hero Section -->
+      <section id="home" class="bg-blue-800 text-white py-20 relative">
+        <img
+          src="images/hero.jpg"
+          alt="Hero Image"
+          class="absolute inset-0 w-full h-full object-cover opacity-50"
+        />
+        <div class="container mx-auto text-center relative z-10">
+          <h1 class="text-4xl md:text-6xl font-bold mb-4">
+            Professional Electrical Solutions
+          </h1>
+          <p class="text-lg mb-8">
+            Reliable, Efficient, and Affordable Electrical Services
           </p>
-          <p class="text-gray-700">
-            With years of experience, our team ensures the highest standards of safety and quality.
-          </p>
+          <a
+            href="#contact"
+            class="bg-yellow-400 text-blue-900 px-6 py-3 rounded-lg hover:bg-yellow-500"
+            >Get a Free Quote</a
+          >
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="py-16">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Residential Services -->
+            <div
+              class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow text-center"
+            >
+              <img
+                src="images/residential.jpg"
+                alt="Residential Services"
+                class="w-full h-48 object-cover rounded-lg mb-4"
+              />
+              <h3 class="text-xl font-bold mb-2">
+                Residential Electrical Services
+              </h3>
+              <p class="text-gray-700">
+                Wiring, lighting, panel upgrades, and more.
+              </p>
+            </div>
+            <!-- Commercial Services -->
+            <div
+              class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow text-center"
+            >
+              <img
+                src="images/commercial.jpg"
+                alt="Commercial Services"
+                class="w-full h-48 object-cover rounded-lg mb-4"
+              />
+              <h3 class="text-xl font-bold mb-2">
+                Commercial Electrical Services
+              </h3>
+              <p class="text-gray-700">
+                Office wiring, maintenance, and installations.
+              </p>
+            </div>
+            <!-- Emergency Repairs -->
+            <div
+              class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow text-center"
+            >
+              <img
+                src="images/emergency.jpg"
+                alt="Emergency Repairs"
+                class="w-full h-48 object-cover rounded-lg mb-4"
+              />
+              <h3 class="text-xl font-bold mb-2">Emergency Repairs</h3>
+              <p class="text-gray-700">24/7 emergency electrical services.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section id="gallery" class="py-16 bg-blue-50">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-12">Our Gallery</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Gallery Items -->
+            <div class="relative group">
+              <img
+                src="images/gallery1.jpg"
+                alt="Gallery Image 1"
+                class="w-full h-64 object-cover rounded-lg transition-transform duration-300 group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-30 transition-opacity rounded-lg"
+              >
+                <!-- <span class="text-white text-lg font-bold">Project 1</span> -->
+              </div>
+            </div>
+
+            <div class="relative group">
+              <img
+                src="images/gallery2.jpg"
+                alt="Gallery Image 2"
+                class="w-full h-64 object-cover rounded-lg transition-transform duration-300 group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-50 transition-opacity rounded-lg"
+              >
+                <!-- <span class="text-white text-lg font-bold">Project 2</span> -->
+              </div>
+            </div>
+
+            <div class="relative group">
+              <video
+                src="images/gallery3.mp4"
+                alt="Gallery Video 3"
+                class="w-full h-64 object-cover rounded-lg transition-transform duration-300 group-hover:scale-105"
+                loop
+                muted
+              ></video>
+              <div
+                class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-50 transition-opacity rounded-lg"
+              >
+                <!-- <span class="text-white text-lg font-bold">Project 3</span> -->
+              </div>
+            </div>
+
+            <script>
+              document.querySelectorAll("video").forEach((video) => {
+                video.addEventListener("mouseenter", () => video.play());
+                video.addEventListener("mouseleave", () => video.pause());
+              });
+            </script>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Us Section -->
+      <section id="about" class="py-16">
+        <div class="container mx-auto items-center px-4">
+          <h2 class="text-3xl font-bold text-center mb-12">About Us</h2>
+          <div class="flex flex-col md:flex-row items-center">
+            <div
+              class="relative w-40 h-40 md:w-56 md:h-56 bg-gray-200 rounded-full overflow-hidden flex items-center justify-center"
+            >
+              <img
+                src="images/about.jpg"
+                alt="About Us"
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <div class="md:w-1/2 md:pl-8">
+              <p class="text-gray-700 mb-4">
+                MEEL Electrical Solutions is a trusted provider of professional
+                electrical services. We are committed to delivering reliable,
+                efficient, and affordable solutions for all your electrical
+                needs.
+              </p>
+              <p class="text-gray-700">
+                With years of experience, our team ensures the highest standards
+                of safety and quality.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Us Section -->
+      <section id="why-us" class="py-16 bg-blue-50">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-12">Why Choose Us?</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Reason 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+              <span class="material-icons text-blue-900 text-4xl mb-4"
+                >thumb_up</span
+              >
+              <h3 class="text-xl font-bold mb-2">Quality Workmanship</h3>
+              <p class="text-gray-700">
+                We deliver top-notch electrical services with precision and
+                care.
+              </p>
+            </div>
+            <!-- Reason 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+              <span class="material-icons text-blue-900 text-4xl mb-4"
+                >schedule</span
+              >
+              <h3 class="text-xl font-bold mb-2">Timely Service</h3>
+              <p class="text-gray-700">
+                We respect your time and ensure projects are completed on
+                schedule.
+              </p>
+            </div>
+            <!-- Reason 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+              <span class="material-icons text-blue-900 text-4xl mb-4"
+                >local_offer</span
+              >
+              <h3 class="text-xl font-bold mb-2">Affordable Pricing</h3>
+              <p class="text-gray-700">
+                We offer competitive rates without compromising on quality.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-16">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-12">Contact Us</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Contact Info -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <h3 class="text-xl font-bold mb-4">Get in Touch</h3>
+              <p class="text-gray-700 mb-2">
+                Phone:
+                <a href="tel:233593062080" class="text-blue-900 hover:underline"
+                  >233593062080</a
+                >
+              </p>
+              <p class="text-gray-700 mb-2">
+                WhatsApp:
+                <a
+                  href="https://wa.me/233593062080"
+                  target="_blank"
+                  class="text-blue-900 hover:underline"
+                  >233593062080</a
+                >
+              </p>
+              <p class="text-gray-700 mb-2">
+                Email:
+                <a
+                  href="mailto:meelelectricalsolutions2@gmail.com"
+                  class="text-blue-900 hover:underline"
+                  >meelelectricalsolutions2@gmail.com</a
+                >
+              </p>
+              <p class="text-gray-700 mb-4">
+                Working Hours: Mon - Fri, 8 AM - 5 PM
+              </p>
+              <h3 class="text-xl font-bold mb-4">Our Location</h3>
+              <img
+                src="images/map.jpg"
+                alt="Map"
+                class="w-full h-48 object-cover rounded-lg"
+              />
+            </div>
+
+            <!-- Contact Form -->
+            <form
+              id="contact-form"
+              class="bg-white p-6 rounded-lg shadow-lg"
+              action="https://formspree.io/f/myyqyqyy"
+              method="POST"
+            >
+              <div class="mb-4">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  class="w-full p-3 border rounded-lg"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  class="w-full p-3 border rounded-lg"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Your Phone Number"
+                  class="w-full p-3 border rounded-lg"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <textarea
+                  name="message"
+                  placeholder="Your Message"
+                  class="w-full p-3 border rounded-lg"
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="bg-blue-900 text-white px-6 py-3 rounded-lg hover:bg-blue-800 w-full"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-8">
+      <div class="container mx-auto px-4">
+        <!-- Footer Grid Layout -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-6 text-center md:text-left"
+        >
+          <!-- Quick Links and Social Media (Same Row) -->
+          <div
+            class="flex flex-col md:flex-row justify-between items-center md:items-start w-full"
+          >
+            <!-- Quick Links -->
+            <div>
+              <h3 class="text-xl font-bold mb-2">Quick Links</h3>
+              <ul
+                class="flex flex-wrap justify-center md:justify-start space-x-4 text-sm"
+              >
+                <li><a href="#home" class="hover:text-yellow-400">Home</a></li>
+                <li>
+                  <a href="#services" class="hover:text-yellow-400">Services</a>
+                </li>
+                <li>
+                  <a href="#gallery" class="hover:text-yellow-400">Gallery</a>
+                </li>
+                <li>
+                  <a href="#about" class="hover:text-yellow-400">About Us</a>
+                </li>
+                <li>
+                  <a href="#why-us" class="hover:text-yellow-400">Why Us</a>
+                </li>
+                <li>
+                  <a href="#contact" class="hover:text-yellow-400">Contact</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div class="mt-4 md:mt-0">
+              <h3 class="text-xl font-bold mb-2">Social</h3>
+              <div class="flex justify-center md:justify-start space-x-6">
+                <a
+                  href="https://facebook.com/meelelectricalsolutions"
+                  target="_blank"
+                  class="text-white hover:text-yellow-400"
+                >
+                  <i class="fa-brands fa-facebook-f text-lg"></i>
+                </a>
+                <a
+                  href="https://instagram.com/meelelectricalsolutions"
+                  target="_blank"
+                  class="text-white hover:text-yellow-400"
+                >
+                  <i class="fa-brands fa-instagram text-lg"></i>
+                </a>
+                <a
+                  href="https://x.com/meelelectricalsolutions"
+                  target="_blank"
+                  class="text-white hover:text-yellow-400"
+                >
+                  <i class="fa-brands fa-twitter text-lg"></i>
+                </a>
+                <a
+                  href="https://wa.me/233593062080"
+                  target="_blank"
+                  class="text-white hover:text-yellow-400"
+                >
+                  <i class="fa-brands fa-whatsapp text-lg"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Copyright (Separate Row) -->
+          <div class="col-span-2 text-center mt-6">
+            <p class="text-sm">
+              © 2025 MEEL Electrical Solutions. All rights reserved.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </footer>
 
-<!-- Contact Section -->
-<section id="contact" class="py-16 fade-in">
-  <div class="container mx-auto px-4">
-    <h2 class="text-3xl font-bold text-center mb-12">Contact Us</h2>
-    <div class="max-w-2xl mx-auto">
-      <!-- Contact Form -->
-      <form id="contact-form" class="bg-white p-6 rounded-lg shadow-lg" action="https://formspree.io/f/manqjodo" method="POST">
-        <div class="mb-4">
-          <input type="text" name="name" placeholder="Your Name" class="w-full p-3 border rounded-lg" required>
-        </div>
-        <div class="mb-4">
-          <input type="email" name="email" placeholder="Your Email" class="w-full p-3 border rounded-lg" required>
-        </div>
-        <div class="mb-4">
-          <input type="tel" name="phone" placeholder="Your Phone Number" class="w-full p-3 border rounded-lg" required>
-        </div>
-        <div class="mb-4">
-          <textarea name="message" placeholder="Your Message" class="w-full p-3 border rounded-lg" required></textarea>
-        </div>
-        <button type="submit" class="bg-blue-900 text-white px-6 py-3 rounded-lg hover:bg-blue-800 justify-center">Send Message</button>
-      </form>
-    </div>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer class="bg-blue-900 text-white py-8">
-  <div class="container mx-auto px-4">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-      <!-- Quick Links -->
-      <div>
-        <h3 class="text-xl font-bold mb-4">Quick Links</h3>
-        <ul class="space-y-2">
-          <li><a href="#home" class="hover:text-yellow-400">Home</a></li>
-          <li><a href="#services" class="hover:text-yellow-400">Services</a></li>
-          <li><a href="#about" class="hover:text-yellow-400">About Us</a></li>
-          <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
-        </ul>
-      </div>
-
-      <!-- Contact Info -->
-      <div>
-        <h3 class="text-xl font-bold mb-4">Contact Info</h3>
-        <p class="mb-2">Email: <a href="mailto:btorfu@gmail.com" class="hover:text-yellow-400">btorfu@gmail.com</a></p>
-        <p class="mb-2">Phone: <a href="tel:0541813988" class="hover:text-yellow-400">0541813988</a></p>
-        <p class="mb-2">Chat: <a href="https://wa.me/233541813988" target="_blank" class="text-green-500 hover:text-green-400">WhatsApp</a></p>
-      </div>
-
-      <!-- Social Media (Optional) -->
-      <div>
-        <h3 class="text-xl font-bold mb-4">Follow Us</h3>
-        <div class="flex space-x-4 justify-center md:justify-start">
-          <a href="https://facebook.com/dhddo" target="_blank" class="text-white hover:text-yellow-400">
-            <span class="material-icons">facebook</span>
-          </a>
-          <a href="https://instagram.com/dhdo4" target="_blank" class="text-white hover:text-yellow-400">
-            <span class="material-icons">instagram</span>
-          </a>
-          <a href="https://x.com/TorfuBenjamin" target="_blank" class="text-white hover:text-yellow-400">
-            <span class="material-icons">twitter</span>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Copyright -->
-    <div class="text-center mt-8">
-      <p>© 2025 Torvex Electricals. All rights reserved.</p>
-    </div>
-  </div>
-</footer>
-  <!-- JavaScript -->
-  <script src="js/script.js"></script>
-</body>
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
 </html>

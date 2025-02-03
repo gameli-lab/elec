@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Torvex Electricals</title>
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+  <!-- Header -->
+  <header class="bg-blue-900 text-white py-4 fixed w-full top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="images/logo.jpg" alt="Torvex Electricals Logo" class="h-12">
+      </div>
+  
+      <!-- Navigation Menu -->
+      <nav class="flex items-center space-x-6">
+        <!-- Home -->
+        <a href="#home" class="hover:text-yellow-400">
+          <span class="hidden md:inline">Home</span>
+          <span class="material-icons md:hidden">home</span>
+        </a>
+        <!-- Services -->
+        <a href="#services" class="hover:text-yellow-400">
+          <span class="hidden md:inline">Services</span>
+          <span class="material-icons md:hidden">build</span>
+        </a>
+        <!-- About Us -->
+        <a href="#about" class="hover:text-yellow-400">
+          <span class="hidden md:inline">About Us</span>
+          <span class="material-icons md:hidden">info</span>
+        </a>
+        <!-- Contact -->
+        <a href="#contact" class="hover:text-yellow-400">
+          <span class="hidden md:inline">Contact</span>
+          <span class="material-icons md:hidden">email</span>
+        </a>
+      </nav>
+  
+      <!-- Contact Info -->
+      <div class="flex items-center space-x-4">
+        <!-- <a href="tel:0541813988" class="hover:text-yellow-400">0541813988</a> -->
+        <a href="https://wa.me/233541813988" target="_blank">
+          <span class="material-icons text-green-500 hover:text-green-400">whatsapp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- Hero Section -->
+  <section id="home" class="bg-blue-800 text-white py-20 fade-in">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Professional Electrical Services</h1>
+      <p class="text-lg mb-8">Reliable, Efficient, and Affordable Solutions for Your Electrical Needs</p>
+      <div class="space-x-4">
+        <a href="#contact" class="bg-yellow-400 text-blue-900 px-6 py-3 rounded-lg hover:bg-yellow-500">Get a Free Quote</a>
+        <a href="tel:0541813988" class="bg-transparent border border-yellow-400 text-yellow-400 px-6 py-3 rounded-lg hover:bg-yellow-400 hover:text-blue-900">Call Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-16 fade-in">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Service Cards -->
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+          <span class="material-icons text-blue-900 text-4xl mb-4">home</span>
+          <h3 class="text-xl font-bold mb-2">Residential Electrical Services</h3>
+          <p class="text-gray-700">Wiring, lighting, panel upgrades, and more.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+          <span class="material-icons text-blue-900 text-4xl mb-4">business</span>
+          <h3 class="text-xl font-bold mb-2">Commercial Electrical Services</h3>
+          <p class="text-gray-700">Office wiring, maintenance, and installations.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+          <span class="material-icons text-blue-900 text-4xl mb-4">build</span>
+          <h3 class="text-xl font-bold mb-2">Emergency Repairs</h3>
+          <p class="text-gray-700">24/7 emergency electrical services.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-blue-50 py-16 fade-in">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">About Torvex Electricals</h2>
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-8 md:mb-0">
+          <img src="images/electrician.jpg" alt="Electrician" class="rounded-lg shadow-lg">
+        </div>
+        <div class="md:w-1/2 md:pl-8">
+          <p class="text-gray-700 mb-4">
+            Torvex Electricals is a trusted provider of professional electrical services.
+            We are committed to delivering reliable, efficient, and affordable solutions
+            for all your electrical needs.
+          </p>
+          <p class="text-gray-700">
+            With years of experience, our team ensures the highest standards of safety and quality.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-16 fade-in">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12">Contact Us</h2>
+    <div class="max-w-2xl mx-auto">
+      <!-- Contact Form -->
+      <form id="contact-form" class="bg-white p-6 rounded-lg shadow-lg" action="https://formspree.io/f/manqjodo" method="POST">
+        <div class="mb-4">
+          <input type="text" name="name" placeholder="Your Name" class="w-full p-3 border rounded-lg" required>
+        </div>
+        <div class="mb-4">
+          <input type="email" name="email" placeholder="Your Email" class="w-full p-3 border rounded-lg" required>
+        </div>
+        <div class="mb-4">
+          <input type="tel" name="phone" placeholder="Your Phone Number" class="w-full p-3 border rounded-lg" required>
+        </div>
+        <div class="mb-4">
+          <textarea name="message" placeholder="Your Message" class="w-full p-3 border rounded-lg" required></textarea>
+        </div>
+        <button type="submit" class="bg-blue-900 text-white px-6 py-3 rounded-lg hover:bg-blue-800 justify-center">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-blue-900 text-white py-8">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="#home" class="hover:text-yellow-400">Home</a></li>
+          <li><a href="#services" class="hover:text-yellow-400">Services</a></li>
+          <li><a href="#about" class="hover:text-yellow-400">About Us</a></li>
+          <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div>
+        <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+        <p class="mb-2">Email: <a href="mailto:btorfu@gmail.com" class="hover:text-yellow-400">btorfu@gmail.com</a></p>
+        <p class="mb-2">Phone: <a href="tel:0541813988" class="hover:text-yellow-400">0541813988</a></p>
+        <p class="mb-2">Chat: <a href="https://wa.me/233541813988" target="_blank" class="text-green-500 hover:text-green-400">WhatsApp</a></p>
+      </div>
+
+      <!-- Social Media (Optional) -->
+      <div>
+        <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+        <div class="flex space-x-4 justify-center md:justify-start">
+          <a href="https://facebook.com/dhddo" target="_blank" class="text-white hover:text-yellow-400">
+            <span class="material-icons">facebook</span>
+          </a>
+          <a href="https://instagram.com/dhdo4" target="_blank" class="text-white hover:text-yellow-400">
+            <span class="material-icons">instagram</span>
+          </a>
+          <a href="https://x.com/TorfuBenjamin" target="_blank" class="text-white hover:text-yellow-400">
+            <span class="material-icons">twitter</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center mt-8">
+      <p>© 2025 Torvex Electricals. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
